@@ -22,6 +22,7 @@ This repository contains the source code for the "Neural Network Final Project".
 Organize your dataset and run the preprocessing script to handle labels:
 ```bash
 python data_preprocess.py
+```
 
 2. Training
 Train the model using the configuration file:
