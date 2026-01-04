@@ -1,13 +1,21 @@
 # Aortic Valve Detection based on YOLOv12
 
-This repository contains the source code for the "Neural Network Final Project". The project focuses on detecting aortic valves in medical imaging using the YOLOv12x architecture.
+The project focuses on detecting aortic valves in medical imaging using the YOLOv12x architecture.
 
 ## 📁 Project Structure
+
+### Python Scripts
 - `data_preprocess.py`: Handles data cleaning and generates empty label files for negative samples.
-- `data_split_v2.py`: Implements the 1:1 negative sampling strategy and splits data into Train/Val sets.
+- `data_split.py`: Initial data splitting script (random split).
+- `data_split_v2.py`: **[Key Strategy]** Implements the 1:1 negative sampling strategy and splits data into Train/Val sets (Model B).
 - `train.py`: Training script using YOLOv12x (train from scratch).
-- `test.py`: Inference script with "Minimum Area" post-processing logic.
-- `visualize_data.py`: Tools for analyzing bounding box distributions.
+- `val.py`: Validation script to evaluate model performance on the validation set.
+- `test.py`: Inference script with custom "Minimum Area" post-processing logic.
+- `visualize_data.py`: Tools for analyzing bounding box distributions and calculating statistics.
+
+### Configuration Files
+- `yolo12x.yaml`: Configuration file defining the YOLOv12x model architecture.
+- `aortic_valve_colab.yaml`: Dataset configuration file defining train/val paths and class names.
 
 ## 🛠️ Environment Requirements
 - Python 3.x
