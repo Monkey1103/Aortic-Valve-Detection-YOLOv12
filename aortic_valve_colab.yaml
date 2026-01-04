@@ -1,0 +1,5 @@
+train: 'D:\task2\new datasets\train\images'
+val: 'D:\task2\new datasets\val\images'
+
+names:
+  0: aortic_valve
