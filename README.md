@@ -24,16 +24,20 @@ Organize your dataset and run the preprocessing script to handle labels:
 python data_preprocess.py
 ```
 
-2. Training
+### 2. Training
 Train the model using the configuration file:
+```bash
 python train.py
+```
 Note: The model is trained from scratch for 500 epochs with a batch size of 6.
 
-3. Inference (Testing)
+### 3. Inference (Testing)
 Run the detection on test images. The script will automatically apply the post-processing algorithm (keeping only the smallest box):
+```bash
 python test.py
+```
 
-📊 Results
+## 📊 Results
 Model Architecture: YOLOv12x
 
 Input Size: 640x640
